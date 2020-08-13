@@ -5,6 +5,7 @@ const app = express();
 const authRoutes = require("./routes/auth.routes");
 const userRoutes = require("./routes/user.routes");
 const postRoutes = require("./routes/post.routes");
+app.use(express.static('public'))
 
 //settings
 app.set("port", process.env.PORT || 4000);
